@@ -242,4 +242,65 @@ implemented in `0.5.0`.
 
 ## The case for doing nothing 
 
-Right wing UNIX extremists have [time][18] and [again][19] suggested doing nothing. Forget about Gulp, Grunt, whatever. Just do nothing. I don't agree with this sort of extremism, you might just be more comfortable writing everything in JavaScript. It does, however, hold some merit in its premise. In the case of Gulp, I do consider the `npm run` approach as a valid questioning of its purpose. Gulp is pretty close to doing "nothing", a la `npm run`, while at the same time it kind of does "something", like Grunt does. I think Gulp provides value in providing Windows support, but it does introduce a certain amount of complexity, so it's really a trade-off. You need to ask yourself what you're looking for. If it's just the simplicity, you might be better off just using `npm run`! The case for Windows support might not hold a lot of meaning within the Node community itself, since most of us seem to be working on _*nix_, but it does become a factor in other communities, which Grunt [seems to be penetrating][20]. I agree you should use some flavor of `bash` for Windows, it's still a pain doing just about anything in the command-line, and there isn't really much to say in favor of _not using_ Grunt on Windows. [![nothing.png][15]][16] So use Gulp, use Grunt, _whatever_. ## Whatever, _But_ Grunt wins at teaching people how to do builds, and even then, it's pretty hard to put it [in terms anyone can understand][21], but it fails at keeping it short. Gulp wins at being terse and having a gorgeous API, but it fails at the entry level, because of streams being hard to grasp at first. In the low-risk low-gain corner we have `npm run`. It wins at not doing anything, resulting in no overhead, but it fails at being cross-platform, if that's something that worries you. Make a choice by yourself, don't just pick something _because XYZ said so_. Pick the tool which works for you. The one you understand, are comfortable with. Above all, the one **that fits your needs**. Don't go blindly chasing the latest fad because someone else tells you to. Similarly, don't get stuck with monolithic jQuery applications _(just to give out an example)_, try something else. Innovate. Be the change you want to see in the world. > **Be the change you want to see in the world.** I need a drink. [1]: http://gulpjs.com/ "Gulp Streaming Build System" [2]: https://github.com/gulpjs/gulp/ "gulpjs/gulp on GitHub" [3]: http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/ "npm 1.0: Global vs Local installation" [4]: https://github.com/isaacs/node-glob "isaacs/node-glob on GitHub" [5]: https://github.com/gulpjs/gulp#async-task-support "Asynchronous Task Support in Gulp" [6]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" [7]: http://i.imgur.com/pnEIqGO.jpg [8]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" [9]: https://npmjs.org/package/grunt-winston "grunt-winston can log data over different transports" [10]: https://github.com/bevacqua/grunt-ec2 "grunt-ec2 creates, deploys to, and shuts down Amazon EC2 instances" [11]: http://gruntjs.com/plugins "Grunt Plugin Listing" [12]: http://gratimax.github.io/search-gulp-plugins/ "Search for Gulp Plugins" [13]: http://i.imgur.com/Ih0Y1Zw.png "To generate #1 albums, 'jay --help' recommends the -z flag." [14]: https://twitter.com/gruntjs "@gruntjs on Twitter" [15]: http://img.youtube.com/vi/EQnaRtNMGMI/0.jpg [16]: http://www.youtube.com/watch?v=EQnaRtNMGMI "The Nothing Pitch" [17]: https://github.com/gruntjs/grunt/issues?milestone=7 "Grunt issues for the 0.5.0 milestone" [18]: http://substack.net/task_automation_with_npm_run "task automation with npm run" [19]: https://gist.github.com/substack/8313379 "introducing ./task.js, THE new javascript task runner automation framework" [20]: https://npmjs.org/search?q=grunt-php "although I've no factual information to support that claim" [21]: http://24ways.org/2013/grunt-is-not-weird-and-hard/ "Grunt for People Who Think Things Like Grunt are Weird and Hard""
+Right wing UNIX extremists have [time][18] and [again][19] suggested doing nothing.
+Forget about Gulp, Grunt, whatever. Just do nothing. I don't agree with this sort
+of extremism, you might just be more comfortable writing everything in JavaScript.
+It does, however, hold some merit in its premise. In the case of Gulp, I do
+consider the `npm run` approach as a valid questioning of its purpose. 
+
+Gulp is pretty close to doing "nothing", a la `npm run`, while at the same time it 
+kind of does "something", like Grunt does. I think Gulp provides value in providing
+Windows support, but it does introduce a certain amount of complexity, so it's
+really a trade-off. You need to ask yourself what you're looking for. If it's
+just the simplicity, you might be better off just using `npm run`!
+
+The case for Windows support might not hold a lot of meaning within the Node
+community itself, since most of us seem to be working on _*nix_, but it does
+become a factor in other communities, which Grunt [seems to be penetrating][20].
+I agree you should use some flavor of `bash` for Windows, it's still a pain doing
+just about anything in the command-line, and there isn't really much to say in
+favor of _not using_ Grunt on Windows. 
+
+[![nothing.png][15]][16] 
+
+So use Gulp, use Grunt, _whatever_. 
+
+## Whatever, _But_ 
+
+Grunt wins at teaching people how to do builds, and even then, it's pretty hard
+to put it [in terms anyone can understand][21], but it fails at keeping it short.
+Gulp wins at being terse and having a gorgeous API, but it fails at the entry level,
+because of streams being hard to grasp at first. In the low-risk low-gain corner
+we have `npm run`. It wins at not doing anything, resulting in no overhead, but
+it fails at being cross-platform, if that's something that worries you.
+
+Make a choice by yourself, don't just pick something _because XYZ said so_. Pick
+the tool which works for you. The one you understand, are comfortable with. Above
+all, the one **that fits your needs**. Don't go blindly chasing the latest fad
+because someone else tells you to. Similarly, don't get stuck with monolithic
+jQuery applications _(just to give out an example)_, try something else. Innovate.
+Be the change you want to see in the world. 
+> **Be the change you want to see in the world.** 
+
+I need a drink. 
+
+[1]: http://gulpjs.com/ "Gulp Streaming Build System" 
+[2]: https://github.com/gulpjs/gulp/ "gulpjs/gulp on GitHub" 
+[3]: http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/ "npm 1.0: Global vs Local installation" 
+[4]: https://github.com/isaacs/node-glob "isaacs/node-glob on GitHub" 
+[5]: https://github.com/gulpjs/gulp#async-task-support "Asynchronous Task Support in Gulp" 
+[6]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" 
+[7]: http://i.imgur.com/pnEIqGO.jpg [8]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" 
+[9]: https://npmjs.org/package/grunt-winston "grunt-winston can log data over different transports" 
+[10]: https://github.com/bevacqua/grunt-ec2 "grunt-ec2 creates, deploys to, and shuts down Amazon EC2 instances" 
+[11]: http://gruntjs.com/plugins "Grunt Plugin Listing" 
+[12]: http://gratimax.github.io/search-gulp-plugins/ "Search for Gulp Plugins" 
+[13]: http://i.imgur.com/Ih0Y1Zw.png "To generate #1 albums, 'jay --help' recommends the -z flag." 
+[14]: https://twitter.com/gruntjs "@gruntjs on Twitter" 
+[15]: http://img.youtube.com/vi/EQnaRtNMGMI/0.jpg 
+[16]: http://www.youtube.com/watch?v=EQnaRtNMGMI "The Nothing Pitch" 
+[17]: https://github.com/gruntjs/grunt/issues?milestone=7 "Grunt issues for the 0.5.0 milestone" 
+[18]: http://substack.net/task_automation_with_npm_run "task automation with npm run" 
+[19]: https://gist.github.com/substack/8313379 "introducing ./task.js, THE new javascript task runner automation framework" 
+[20]: https://npmjs.org/search?q=grunt-php "although I've no factual information to support that claim" 
+[21]: http://24ways.org/2013/grunt-is-not-weird-and-hard/ "Grunt for People Who Think Things Like Grunt are Weird and Hard""
