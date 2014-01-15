@@ -137,23 +137,25 @@ Gulp делает хорошую работу, показывая как код 
 
 ## Я выбираю `/Gr?u(nt|lp)/`
 
-Давайте посмотрим, где сравнение между этими таск-менеджерами ломается. 
-
-Let's see where the comparison between both task runners breaks down. Gulp is
+Давайте посмотрим, где сравнение между этими таск-менеджерами ломается. Gulp is
 streams all the way down, almost as if you were shell scripting. That is, if
 you "get" [Node streams][6]. Otherwise, you're going to have a bad time.
 
 [![streams.jpg][7]][8]
 
-That being said, if you're a Node person, it's hard to ignore the audacity with 
-which Gulp has you set up a build flow using code, rather than configuration, 
-like Grunt does. This is, however, an undeniable drawback of Gulp. Some people 
-will just never get streams. They might be PHP workers, or some other server-side 
-voodoo like Ruby, or Python, and not be familiar at all with Node streams and 
-buffers. They might know Common.JS, but that's as far as they'll ever get from 
-their comfort zone. For those people, Gulp will never be a choice over Grunt. 
+Если вы node-персона. Трудно игнорировать смелость, с которой Gulp строит механизм
+сборки вокруг кода, вместо конфигурации, как это делает Grunt. Однако, это и
+неоспоримый недостаток Gulp. Некоторые люди просто не понимают потоки NodeJS.
+Это могут быть PHP-разработчики, или какие-то другие сервеные вуду, типа Ruby или
+Python. Они могут быть не знакомы с потоками или буферами NodeJS. Они может быть и
+знают CommonJS, но едва ли они зашли в этом дальше своей зоны комфорта. Такие
+люди никогда откажутся от Grunt в пользу Gulp.
 
-> While Gulp is easier to read, Grunt is easier to write, and sometimes that's more valuable. 
+> В то время, как Gulp легче для чтения, Grunt легче для написания, и ингогда
+> это имеет большее значение.
+
+
+Gulp ориентирован на сборку, и особенно на работу с файлами.
 
 Gulp is oriented to do build stuff, and more specifically, things which _deal in files_.
 That's pretty much the bottom-line of their "In, Out, Watch" API. This is good, bad,
