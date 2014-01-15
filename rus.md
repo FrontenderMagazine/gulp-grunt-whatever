@@ -28,58 +28,61 @@ That's a lot to say when pitching it against Grunt, which is [quite larger][03] 
 [07]: http://www.youtube.com/watch?v=kRhW_zMlf0Y "Jackie Chiles on Seinfeld"
 [08]: http://i.imgur.com/yFeBvMO.png "gulp.png"
 
-# Introducing [Gulp][1] 
+# Введение в [Gulp][1]
 
-You might want to kick things off by [going through the README][2], although I
-would reccomend you skim through the source code, as there aren't really a lot
-of surprises there, just some well thought-out, and concise code.
+Возможно, вы захотите пропустить эту часть, [прочитав README][2], хотя, я бы
+порекомендовал вам посмотреть в исходный код Gulp, там не много сюрпризов, скорее
+просто хорошо продуманный и краткий код.
 
-As you might've read while skimming over their documentation, installing Gulp
-is very reminiscent of what you had to do with Grunt.
+Как вы могли заметить в документации, установка Gulp очень напоминает, то
+как это происходит с Grunt.
 
-- Have a `package.json` - `npm install -g gulp`
+- Создать `package.json`
+- `npm install -g gulp`
 - `npm install --save-dev gulp`
-- Create a `gulpfile.js`
+- Создать `gulpfile.js`
 - `gulp`
 
 At this point, the main difference with Grunt is that they didn't take their 
-**CLI** out of core _(at least not yet)_, which might confuse you if you don't 
+**CLI** out of core (???) _(at least not yet)_, which might confuse you if you don't 
 [understand global installs][3] in `npm`.
 
-Before heading to a sample gulpfile, let's look at how the API looks like.
-There's five methods, and that's all you need. That's awesome, a concise API
-really helps keep the module focused on just what it's good at, processing build
-tasks.
+Перед тем, как мы перейдем к простому gulpfile., давайте посмотрим, как выглядит
+API Gulp. Здесь есть 5 методов, и, вобщем-то, это все, что вам понадобиться. 
+Это потрясающий лаконичный API, который действительно помогает Gulp фокусироваться
+на главном — обработке задач сборки.
 
-- `.src(globs[, options])` takes a [glob][4] and returns an input stream
-- `.dest(path)` takes a path and returns an output stream
-- `.task(name[, deps], fn)` defines a task
-- `.run(tasks...[, cb])` runs tasks
-- `.watch(glob [, opts], cb)` watches the file system
+- `.src(globs[, options])` принимает [glob][4] и возвращает входной поток
+- `.dest(path)` принимает путь к файлу, и возвращает исходящий поток
+- `.task(name[, deps], fn)` определяет задачу
+- `.run(tasks...[, cb])` запускает задачу
+- `.watch(glob [, opts], cb)` следит за изменениями в файловой системе
 
-I must say, that API is just awesome. Let's look at a simple task to compile
-Jade templates, taken from Gulp's documentation. Here, `jade()` and `minify()`
-are Gulp plugins, we'll get to those in a minute.
+Вы можете сказать, этот API просто великолепен! Посмотрим на простую задачу из
+документации Gulp — компилирование Jade-шаблонов. Здесь `jade()` и `minify()` —
+плагины Gulp — мы вернемся к этому через минуту. 
 
     js gulp.src('./client/templates/*.jade')
       .pipe(jade()) .pipe(minify())
       .pipe(gulp.dest('./build/minified_templates'));
 
-There isn't much boilerplate code involved, due to the fact that we're just
-writing code as opposed to putting together a configuration object. 
+Здесь не так уж и много шаблонного кода, потому что мы здесь просто пишем код, 
+а не собирает объект-конфигурацию. 
 
-In Grunt you'd need some boilerplate to get this thing going, such as loading 
-`npm` modules with a rather weird `grunt.loadNpmTasks` method, creating a task 
-alias that combines the required tasks, and configuring each of them to do what 
-you need. One of the issues with Grunt which is solved by Gulp is that a single 
-monolithic configuration object forces you to jump through hoops in order to 
-achieve the results you want. If you have a workflow which copies a file and 
-minifies something else, and another one which copies an unrelated file, the 
-`copy` task configuration ends up with two completely unrelated `copy` 
-operations, albeit under different targets. 
+В Grunt вам понадобиться немного шаблонного кода для того, чтобы выполнить
+то же самое. К примеру, загрузка `npm` модулей с помощью `grunt.loadNpmTasks`,
+создание ссылки на задачу, которая содержит список требуемых тасков, и
+конфигурация каждой задачи так, как нам нужно. Одна из проблем с Grunt,
+которую решает Gulp — это единый монолитный конфигурационный объект, заставляющий
+вас прыгать через обручи, чтобы добиться желаемых результатов.
 
-Gulp does a good job of showing how code over configuration can help prevent 
-such an scenario where configuration ends up being confusing and hard to digest. 
+Если ваш процесс сборки заключается в копировании файл и минифицирует что-то еще,
+плюс копирует еще один файл не относящийся ни к чему файл, то задача `copy` будет
+задача `copy` будет иметь две абсолютно несвязанных операции копирования, хотя
+и с различными целями (???)
+
+Gulp делает хорошую работу, показывая как код вместо конфигурации может помочь
+предотвратить такой сценарий, в котором конфигурация начинает сбивать с толку.
 
 ## Savoring a `gulp` 
 
