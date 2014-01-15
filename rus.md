@@ -84,10 +84,10 @@ API Gulp. Здесь есть 5 методов, и, вобщем-то, это в
 Gulp делает хорошую работу, показывая как код вместо конфигурации может помочь
 предотвратить такой сценарий, в котором конфигурация начинает сбивать с толку.
 
-## Savoring a `gulp` 
+## Каков `gulp` на вкус
 
-Consider this short sample `gulpfile.js`, adapted from what's on the docs for 
-Gulp. 
+Рассматривая этот короткий пример `gulpfile.js`, адаптированный из документации
+к Gulp.
 
     var gulp = require('gulp'); 
     var uglify = require('gulp-uglify'); 
@@ -114,25 +114,30 @@ Gulp.
       }); 
     });
 
-Even if you don't know Node streams, this is pretty readable, right? I'd argue 
-it's more readable than a `Gruntfile.js` which does the same things, because in 
-this case we're simply following the code, and guessing what it does becomes 
-much easier then. Take out comments stating the obvious, and you've got yourself
-a terse `gulpfile.js`. 
+Это выглядит чертовски читаемо, даже если вы не знакомы с потоковой системой
+передачи данных в NodeJS, не так ли? Я уверен, что это гораздо читаемее, чем
+`Gruntfile.js`, который бы делал те же самые вещи, потому что в этом случае
+мы можем просто пробежаться глазами по коду и понять, что здесь происходит. 
+Это гораздо легче, чем в случае с GruntJS. Вы можете избавиться от комментариев,
+которые вполне очевидны, и вы получите лаконичный `gulpfile.js`
 
-The fact that Gulp provides a reasonable `.watch` implementation as part of their
-core API is also encouraging, as that's a key piece of functionality which gives
-a lot of value to a build system during development. Support for[asynchronous task development][5]
-feels much more integrated in Gulp than it does in Grunt, where targets really
-complicate matters when passing values to tasks.
+Тот факт, что Gulp обеспечивает реализацию метода `.watch` как часть своего
+основного API также обнадёживает, потому как он является ключевой частью
+функциональности, которая в процессе разработки имеет много значения в системе
+сборки.  Поддержка [разработки асинхронных задач][5] кажется гораздо лучше
+интеграрованной в Gulp чем в Grunt, где цели(targets) действительно усложняют
+работу при передаче данных в задачи. 
 
-Generally speaking, the API provided by Gulp makes more sense and is easier to use
-than that in Grunt. That's more or less the argument for Gulp. A **clean, concise,
-and awesome** API. Simple plugins which do **one thing very well**, and not whatever
-they feel like, as witnessed in many Grunt tasks. Not everything is pink roses for Gulp,
-though, and there are a few downsides to it as well. 
+Говоря в общем, то API, которое есть у Gulp обеспечивает более понятное и
+простое использование, чем Grunt. Это более-менее аргумент для Gulp. **Простой,
+лаконичный, потрясающий** API. Простые плагины, которые выполняют только одну
+простую задачу, и не делают все, что им кажется нужным, как это принято
+в большинстве плагинов Grunt. Но у Gulp тоже есть недостатки 
+(Not everything is pink roses for Gulp, though, and there are a few downsides to it as well.)
 
-## Dissecting `/Gr?u(nt|lp)/`
+## Я выбираю `/Gr?u(nt|lp)/`
+
+Давайте посмотрим, где сравнение между этими таск-менеджерами ломается. 
 
 Let's see where the comparison between both task runners breaks down. Gulp is
 streams all the way down, almost as if you were shell scripting. That is, if
