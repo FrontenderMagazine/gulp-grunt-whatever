@@ -250,30 +250,31 @@ Grunt _может утонуть сам по себе_. Он целую вечн
 только сидеть и ждать, или вы можете захотеть [пойти вперед и предложить что-нубудь][17],
 что бы вы хотели видеть в `0.5.0`.
 
-## The case for doing nothing 
+## Не плоди сущностей
 
-Right wing UNIX extremists have [time][18] and [again][19] suggested doing nothing.
-Forget about Gulp, Grunt, whatever. Just do nothing. I don't agree with this sort
-of extremism, you might just be more comfortable writing everything in JavaScript.
-It does, however, hold some merit in its premise. In the case of Gulp, I do
-consider the `npm run` approach as a valid questioning of its purpose. 
+Правые Unix-экстремисты [снова][18] и [снова][18] предлагают не плодить сущностей.
+Забыть о Gulp и Grunt. Просто забыть. Я, по правде говоря, не согласен с этим типом
+экстремизма, но вам может быть более комфортно, если будете напишете все на чистом
+JavaScript. Думаю, что в этом может быть определенный смысл. В случае с Gulp,
+я думаю In the case of Gulp, I do consider the `npm run` approach as a valid
+questioning of its purpose. 
 
-Gulp is pretty close to doing "nothing", a la `npm run`, while at the same time it 
-kind of does "something", like Grunt does. I think Gulp provides value in providing
-Windows support, but it does introduce a certain amount of complexity, so it's
-really a trade-off. You need to ask yourself what you're looking for. If it's
-just the simplicity, you might be better off just using `npm run`!
+Gulp достаточно близко находится философии отказа от создания лишних сущностей, 
+но в каких-то моментах он ближе к Grunt, который от этой философии далеко.
+Я думаю, Gulp придает значение обеспечению поддержки Windows, но это должно
+внести определенное количество сложности, так что это действительно компромисс.
+Вам нужно спросить себя, что вы ищете. И, если вам нужно что-то очень простое,
+то вам действительно лучше использовать `npm run`!
 
-The case for Windows support might not hold a lot of meaning within the Node
-community itself, since most of us seem to be working on _*nix_, but it does
-become a factor in other communities, which Grunt [seems to be penetrating][20].
-I agree you should use some flavor of `bash` for Windows, it's still a pain doing
-just about anything in the command-line, and there isn't really much to say in
-favor of _not using_ Grunt on Windows. 
+Поддержка windows, врядли имеет много смысла, потому что большинство из нас
+работают на _*nix_, но это играет роль для других сообществ, куда Grunt, [похоже
+проникает][20]. Я согласен что вы будете использовать кое-что от `bash` в Windows,
+и это все еще боль — делать хоть что-то в ее командной строке, но все же
+это вряд ли аргумент, чтобы _не использовать_ Grunt на Windows.
 
 [![nothing.png][15]][16] 
 
-So use Gulp, use Grunt, _whatever_. 
+Чтож, используйте Gulp или Grunt. Любой из них. 
 
 ## Whatever, _But_ 
 
