@@ -227,27 +227,28 @@ buffers, ассинхронным JavaScript в целом (промисы, ко
 И еще один фактор стоит учитывать. Grunt за все эти дни не подал никакого вида.
 Это заставляет волноваться, и это нужно брать во внимание.
 
-## The boar is becoming kind of stale 
+## Grunt стареет
 
-Grunt might _drown on its own_. It sat on `0.4.1` for ages, before moving to an
-unimpressive `0.4.2` release, and it doesn't seem to be going places now, either.
-Activity on the [@gruntjs][14] Twitter account is kind of flat-lining these days,
-and that's not a good sign, either.
+Grunt _может утонуть сам по себе_. Он целую вечность находился в версии `0.4.1`,
+перед тем как сдвинуться к невпечатляющей версии `0.4.2`, а сейчас, какжется,
+что он вообще не двигается с места. Активности в твиттере [@gruntjs][14]
+практически не было за все эти дни, и это вряд ли хороший знак.
 
-I'm really hoping this is just transitional as planning for `0.5.0` is underway,
-but I feel like the team moved on to other projects. While I wouldn't consider
-it abandoned, it's a concern that I haven't seen raised yet. What I'd love to
-see is an eventual `1.0.0` release with a re-imagined configuration structure
-that deals with _the problems we've experimented thus far_. Easier plugin loading,
-a watch mechanism in core similar to what Gulp did, simpler file description
-semantics, and a reduced overhead for configuring tasks in general.
+Я действительно надеюсь переходный период и под капотом планируется `0.5.0`,
+но я чувствую, как-будто команда переключилась на другой проект. Я бы не стал
+говорить, что Grunt заброшен, но у меня есть опасения, потому что я не вижу,
+чтобы над ним активно велись работы. Мне очень сильно хочется увидеть релиз `1.0.0`
+с переосмысленной структурой конфигурации, с учетом тех проблем которых мы
+касались выше. Простую загрузку плагинов, встроенный в ядро watch, подобно тому,
+как это сделал Gulp, простую семантическую структуру файлов, и более простую
+настройку задач в целом.
 
-Of course, it's easy to _want_ those things, but it's hard to implement them
-without breaking most of the existing 2000 plugins. Considering the plugin
-ecosystem is one of Grunt's most valuable assets, it'll be hard to get right
-a release plan that's both sensible and meaningful. We'll just have to sit and
-wait, or you might want to [go ahead and propose something][17] to be
-implemented in `0.5.0`. 
+Конечно, _хотеть_ такие штуки просто, но вот реализовывать их не сломав
+большинство из 2000 работающих плагинов тяжело. Учитывая, что система плагинов
+в Grunt является одной из главных ценностей Grunt, то получить правильный план
+развития становится черезвычайно сложно, и это разумно и значимо. Мы можем
+только сидеть и ждать, или вы можете захотеть [пойти вперед и предложить что-нубудь][17],
+что бы вы хотели видеть в `0.5.0`.
 
 ## The case for doing nothing 
 
