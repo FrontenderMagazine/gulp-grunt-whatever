@@ -155,24 +155,25 @@ Python. Они могут быть не знакомы с потоками ил�
 > это имеет большее значение.
 
 
-Gulp ориентирован на сборку, и особенно на работу с файлами.
+Gulp ориентирован на сборку, в особенности _на работу с файлами_. На этом,
+в сущности, и основан API Gulp: «In, Out, Watch». Это здорово, потому что
+позволяет сконцентрироваться на задачах. Сборке. В этом и есть идея — вы
+получаете что-то на вход: а затем что-то возвращаете(output), используя некоторые
+преобразования, которые придают форму результату. Но в этом есть минус, потому
+что те вещи, которые не относятся к процессу сборки _с таким API становятся труднее_. 
+К примеру, [отправка уведомления об окончании сборки][9] или запуск 
+[Amazon EC2-серверов][10] противоречит тому, для чего был разработан Gulp.
 
-Gulp is oriented to do build stuff, and more specifically, things which _deal in files_.
-That's pretty much the bottom-line of their "In, Out, Watch" API. This is good, bad,
-and something else. It's good because it focuses on doing one thing. Builds. That's
-it, you have some inputs, and then you have some outputs, using some transforms
-which help shape them. It's bad because doing non-build stuff is harder with
-_such a precise API_, sending out [build notifications][9], or spinning up
-[Amazon EC2 instances][10] goes against what Gulp is designed to deliver. 
+Gulp очень новый, и мы можем видеть, как развивается его эко-система, но я
+не жду, что разработка задач будет более популярна, чем у GruntJS (???). Я думаю,
+что это хорошо, я е верю что Gulp сможет побить Grunt в интеграционном тестировании
+и в области деплоя, тогда как я полагаю, что Gulp полностью возьмет на себя более
+простые воркфлоу которые не заходят дальше, чем сборка клиетской части, и 
+публикация на Heroku.
 
-Gulp is **extremely new** and we'll have to see _how its ecosystem evolves_, but I
-don't expect deployment Gulp tasks to gain significant adoption over what already 
-exists in Grunt. I think that's a good thing, I don't believe Gulp could "beat" 
-Grunt in CI and deployment circles, whereas I think it'll completely take over 
-simpler workflows which don't involve much more than building client-side assets 
-and pushing to Heroku. 
+## Gulp не победит Grunt
 
-## Gulp _won't sip out_ Grunt
+
 
 There are a few reasons why I believe Gulp won't push Grunt to the brink of
 dehydration out in the desert. If anything, it'll bring more attention to it,
