@@ -166,20 +166,18 @@ Gulp ориентирован на сборку, в особенности _на
 
 Gulp очень новый, и мы можем видеть, как развивается его эко-система, но я
 не жду, что разработка задач будет более популярна, чем у GruntJS (???). Я думаю,
-что это хорошо, я е верю что Gulp сможет побить Grunt в интеграционном тестировании
+что это хорошо, я е верю что Gulp сможет побить Grunt в непрерывной интеграционнии
 и в области деплоя, тогда как я полагаю, что Gulp полностью возьмет на себя более
 простые воркфлоу которые не заходят дальше, чем сборка клиетской части, и 
 публикация на Heroku.
 
 ## Gulp не победит Grunt
 
-
-
-There are a few reasons why I believe Gulp won't push Grunt to the brink of
-dehydration out in the desert. If anything, it'll bring more attention to it,
-by pushing the boundaries of what JavaScript task runners can do. First off,
-Gulp won't "beat" Grunt because it isn't anyone's goal for that to happen,
-certainly not that of industry leaders.
+Вот несколько причин, почему я верю, что Gulp не бросит Grunt умирать от
+обезвоживания в пустыне. Но, во всяком случае он привлечет больше внимания
+к нему, расширяя границы того, что сейчас могут сделать JavaScript таск-менеджеры.
+Во-первых, Gulp не собирается побеждать Grunt. По крайней мере, ни у кого нет
+такой цели, и точно этой цели нет у лидеров индустрии.
 
 <blockquote class="twitter-tweet" lang="en">
   <p>Grunt vs. Gulp: both serve different needs &amp; can coexist happily. 
@@ -187,36 +185,38 @@ certainly not that of industry leaders.
      We&#39;ll support both
   </p>
   &mdash; Addy Osmani (@addyosmani) <a href="https://twitter.com/addyosmani/statuses/420870024379637760">January 8, 2014</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This might come as news, but it shouldn't come as a surprise. A lot of effort
-went into the current state of Grunt, and it wouldn't make a lot of sense 
-laying waste to that by porting it all out to the latest hot chick in town, you 
-have to make a choice. Stick to what you've got, or go out chasing the popular 
-blonde of mystery. 
 
-Secondly, like I've mentioned earlier, **Gulp introduces a barrier of entry 
-that doesn't exist in Grunt**, non-Noders will have a hard time dealing with 
-streams, pipes, buffers, asynchronous JavaScript in general _(promises, 
-callbacks, whatever)_, and I just don't see how it can strive amongst non-Noders
-looking for a front-end build system, considering those conditions. 
 
-Furthermore, Gulp **doesn't solve any new problems** really. The API is awesome 
-and straightforward, but it does complicate non-build tasks, and Grunt has the 
-upper hand in this one. It boasts [over 2000 plugins][11] registered on `npm`, 
-against the [~200-ish][12] going for Gulp. That being said, it'd be interesting 
-to see the ability to straight up run Grunt tasks in Gulp, but I don't think it 
-would ever stick. I doubt using `/Gr?u(nt|lp)/` would make your life any easier, 
-no matter what. If you need both, that's _probably a sign that you should just 
-stick with Grunt_.
+Можно воспринимать это как новость, но это не должен быть сюрприз. Много
+усилий было вложено в текущее состояние Grunt, и едва ли кто-то бросит их,
+просто для того, чтобы портировать их все в новую горячую цыпочку в городке,
+вы должны сделать выбор. Придерживаться того, что есть у вас, или пуститься
+в погоню за популярной и таинственной блондинкой.
+
+Во-вторых, как я уже говорил раньше, в Gulp есть определенный порог входа,
+которого нет у Grunt, без опыта в nodejs у вас будут трудности со stream, pipes,
+buffers, ассинхронным JavaScript в целом (промисы, колбеки, да с чем угодно!),
+и я просто не вижу как gulp может просочиться в среду далеких от nodejs
+людей, и применяться там как система для сборки фронт-енда. Учитывая все эти
+факторы.
+
+Кроме того, Gulp **не режает каждой новой проблемы**. Серьезно. API потрясающ
+и целенаправлен, но он вызывает затруднения в задачах не касающихся сборки,
+в этом побеждает Grunt. [Больше 2000 плагинов Grunt][11] зарегистрировано в `npm`,
+против [~200][12] написанных для Gulp. Интересно видеть возможность как Gulp 
+может запускать задачи Grunt, но я сомневаюсь, что это приживется. Я сомневаюсь,
+что `/Gr?u(nt|lp)/` сделает вашу жизнь легче. Вряд ли. Если вам кажется, 
+что вам нужны обе системы сборки, то _вероятно, вам стоит остановиться на Grunt_.
 
 ![regex.png][13] 
 
-There's also a _speed factor_ involved. I'll leave the merits of such speed 
-gains for you to mull over. The important take-away here should be that there 
-isn't a one-size-fits-all answer. Gulp might be faster, Grunt might be more 
-"all-encompassing", but at the end of the day, you'll have to choose one over 
-the other. Don't use both in the same application. Don't be _that guy_. 
+Здесь также рассматривался фактор скорости работы. Я оставлю вас обдумать это
+самостоятельно. Важно понять, что здесь нет всеобъемлющего ответа. Gulp может
+быть быстрее, возможности Grunt могут быть более обширными, но в конце концов,
+вы предпочтете один другому. Не используйте оба в одном приложении, не будьте как
+этот парень.
 
 <blockquote class="twitter-tweet" lang="en">
   <p>just switched a project from <a href="https://twitter.com/search?q=%23gruntjs&amp;src=hash">#gruntjs</a> to <a href="https://twitter.com/search?q=%23gulpjs&amp;src=hash">#gulpjs</a> - simpler code, &amp; build time on save during watch from 3-5sec to 10-20ms. I kid you not.</p>
@@ -224,9 +224,8 @@ the other. Don't use both in the same application. Don't be _that guy_.
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Something else we might need to factor in is the case of _Grunt not really
-grunting_ all that much these days. This is a worrysome factor you should also
-be taking into account. 
+И еще один фактор стоит учитывать. Grunt за все эти дни не подал никакого вида.
+Это заставляет волноваться, и это нужно брать во внимание.
 
 ## The boar is becoming kind of stale 
 
