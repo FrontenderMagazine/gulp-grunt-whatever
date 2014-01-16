@@ -300,7 +300,8 @@ I need a drink.
 [4]: https://github.com/isaacs/node-glob "isaacs/node-glob on GitHub" 
 [5]: https://github.com/gulpjs/gulp#async-task-support "Asynchronous Task Support in Gulp" 
 [6]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" 
-[7]: http://i.imgur.com/pnEIqGO.jpg [8]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" 
+[7]: http://i.imgur.com/pnEIqGO.jpg 
+[8]: http://www.youtube.com/watch?v=lQAV3bPOYHo "Harnessing the awesome power of streams" 
 [9]: https://npmjs.org/package/grunt-winston "grunt-winston can log data over different transports" 
 [10]: https://github.com/bevacqua/grunt-ec2 "grunt-ec2 creates, deploys to, and shuts down Amazon EC2 instances" 
 [11]: http://gruntjs.com/plugins "Grunt Plugin Listing" 
