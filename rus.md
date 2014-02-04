@@ -238,6 +238,12 @@ Grunt. В `npm` зарегистрировано [больше 2000 плагин
 концов, вы отдадите свои предпочтения в пользу одного из таск-менеджеров. 
 Но, ради бога, не используйте оба в одном проекте, не будьте как этот парень.
 
+<blockquote>
+  <p>Только что перешел на проекте с <a href="https://twitter.com/search?q=%23gruntjs&amp;src=hash">#gruntjs</a> на <a href="https://twitter.com/search?q=%23gulpjs&amp;src=hash">#gulpjs</a> - код проще и время подготовки билда сократилось с 3-5 сек до 10-20 мс. Я не шучу.</p>
+  &mdash; Andy Joslin (@andytjoslin) <a href="https://twitter.com/andytjoslin/statuses/416424985662468097">27 Декабря, 2013</a>
+</blockquote>
+
+
 <blockquote class="twitter-tweet" lang="en">
   <p>Только что перешел на проекте с <a href="https://twitter.com/search?q=%23gruntjs&amp;src=hash">#gruntjs</a> на <a href="https://twitter.com/search?q=%23gulpjs&amp;src=hash">#gulpjs</a> - код проще и время подготовки билда сократилось с 3-5 сек до 10-20 мс. Я не шучу.</p>
   &mdash; Andy Joslin (@andytjoslin) <a href="https://twitter.com/andytjoslin/statuses/416424985662468097">27 Декабря, 2013</a>
