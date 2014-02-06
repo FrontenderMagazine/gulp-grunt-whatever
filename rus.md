@@ -192,6 +192,15 @@ Grunt в непрерывной интеграции и в области раз
 собирается вытеснять Grunt. По крайней мере, никто не преследует подобную 
 цель, и уж точно, ее не преследуют лидеры индустрии.
 
+<blockquote>
+  <p>Grunt против gulp: оба служат разным потребностям и могут существовать сообща. 
+     Смотрите: <a href="http://t.co/fQ5G8HDNwl">http://t.co/fQ5G8HDNwl</a> и <a href="https://t.co/joUVeRqj8T">https://t.co/joUVeRqj8T</a>. 
+     Мы поддерживаем обоих.
+  </p>
+  &mdash; Addy Osmani (@addyosmani) <a href="https://twitter.com/addyosmani/statuses/420870024379637760">8 Января, 2014</a>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 <blockquote class="twitter-tweet" lang="en">
   <p>Grunt против gulp: оба служат разным потребностям и могут существовать сообща. 
      Смотрите: <a href="http://t.co/fQ5G8HDNwl">http://t.co/fQ5G8HDNwl</a> и <a href="https://t.co/joUVeRqj8T">https://t.co/joUVeRqj8T</a>. 
