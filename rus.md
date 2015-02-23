@@ -201,16 +201,6 @@ Grunt в непрерывной интеграции и в области раз
 </blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-<blockquote class="twitter-tweet" lang="en">
-  <p>Grunt против gulp: оба служат разным потребностям и могут существовать сообща. 
-     Смотрите: <a href="http://t.co/fQ5G8HDNwl">http://t.co/fQ5G8HDNwl</a> и <a href="https://t.co/joUVeRqj8T">https://t.co/joUVeRqj8T</a>. 
-     Мы поддерживаем обоих.
-  </p>
-  &mdash; Addy Osmani (@addyosmani) <a href="https://twitter.com/addyosmani/statuses/420870024379637760">8 Января, 2014</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
 Возможно, для вас это и новость, но вряд ли это такой уж сюрприз. В текущую
 эко-систему Grunt было вложено много усилий, и едва ли хотя бы один из её 
 разработчиков окончательно всё бросит только ради того, чтобы портировать свои 
@@ -251,13 +241,6 @@ Grunt. В `npm` зарегистрировано [больше 2000 плагин
   <p>Только что перешел на проекте с <a href="https://twitter.com/search?q=%23gruntjs&amp;src=hash">#gruntjs</a> на <a href="https://twitter.com/search?q=%23gulpjs&amp;src=hash">#gulpjs</a> - код проще и время подготовки билда сократилось с 3-5 сек до 10-20 мс. Я не шучу.</p>
   &mdash; Andy Joslin (@andytjoslin) <a href="https://twitter.com/andytjoslin/statuses/416424985662468097">27 Декабря, 2013</a>
 </blockquote>
-
-
-<blockquote class="twitter-tweet" lang="en">
-  <p>Только что перешел на проекте с <a href="https://twitter.com/search?q=%23gruntjs&amp;src=hash">#gruntjs</a> на <a href="https://twitter.com/search?q=%23gulpjs&amp;src=hash">#gulpjs</a> - код проще и время подготовки билда сократилось с 3-5 сек до 10-20 мс. Я не шучу.</p>
-  &mdash; Andy Joslin (@andytjoslin) <a href="https://twitter.com/andytjoslin/statuses/416424985662468097">27 Декабря, 2013</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Не стоит упускать из виду еще один важный фактор — за все дни Grunt не подал и 
 виду, будто бы это противостояние его хоть как-то волнует. И это спокойствие 
