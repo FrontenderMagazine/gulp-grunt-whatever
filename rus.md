@@ -99,12 +99,12 @@
 
     gulp.task('scripts', function() { 
       // Минифицируем и копируем все JavaScript файлы,
-      // кроме скриптов поставщика 
+      // кроме сторонних скриптов
       gulp.src(['client/js/**/*.js', '!client/js/vendor/**']) 
         .pipe(uglify()) 
         .pipe(gulp.dest('build/js'));
 
-        // Копируем скрипты поставщика 
+        // Копируем сторонние скрипты
         gulp.src('client/js/vendor/**') 
           .pipe(gulp.dest('build/js/vendor')); 
 
